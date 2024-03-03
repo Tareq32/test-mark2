@@ -1,44 +1,58 @@
 @import url(fonts.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1400px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.col-6{
+.col-6 {
     width: 50%;
 }
 
-body{
+body {
     background: url(../img/group-overly3.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
-.h-row{
+header {
+    background: #FFF;
+    box-shadow: 15px 9px 30px 0px rgba(117, 77, 233, 0.15);
+}
+
+section{
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    justify-content: center;
+}
+
+.h-row {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     gap: 150px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-nav li{
+nav li {
     list-style: none;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #4A326F;
     text-align: center;
@@ -50,18 +64,18 @@ nav a{
     text-transform: capitalize;
 }
 
-.Home{
+.Home {
     color: #926EFB !important;
 }
 
-.s-buttons{
+.s-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.log-in{
+.log-in {
     display: flex;
     width: 99.89px;
     height: 54.5px;
@@ -73,7 +87,7 @@ nav a{
     border: 1px solid #926EFB;
 }
 
-.log-in a{
+.log-in a {
     color: #926EFB;
     font-family: "Nunito Sans";
     font-size: 15px;
@@ -83,7 +97,7 @@ nav a{
     text-decoration: none;
 }
 
-.sign-up{
+.sign-up {
     width: 111.88px;
     height: 52.5px;
     flex-shrink: 0;
@@ -91,7 +105,7 @@ nav a{
     border-radius: 5px;
 }
 
-.sign-up a{
+.sign-up a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,18 +119,18 @@ nav a{
     text-decoration: none;
 }
 
-.s-row{
+.s-row {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
 }
 
-.left-side{
+.left-side {
     display: flex;
     flex-direction: column;
 }
 
-h1{
+h1 {
     color: #4A326F;
     font-family: "Readex Pro";
     font-size: 60px;
@@ -125,11 +139,11 @@ h1{
     line-height: 90px
 }
 
-.d-color{
+.d-color {
     color: #926EFB !important;
 }
 
-p{
+p {
     color: #6F7782;
     font-family: "Nunito Sans";
     font-size: 18px;
@@ -139,14 +153,14 @@ p{
     padding-top: 30px;
 }
 
-.s-bar form{
+.s-bar form {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
 }
 
-.text-bar{
+.text-bar {
     display: flex;
     width: 447.17px;
     height: 64px;
@@ -160,7 +174,7 @@ p{
     box-shadow: 15px 9px 30px 0px rgba(117, 77, 233, 0.15);
 }
 
-.free-start button{
+.free-start button {
     width: 150px;
     height: 52.5px;
     background: #000;
@@ -174,16 +188,16 @@ p{
     line-height: 22.5px;
 }
 
-.right-side img{
+.right-side img {
     width: 100%;
 }
 
-.last-bar{
+.last-bar {
     display: flex;
     gap: 20px;
 }
 
-.last-bar span{
+.last-bar span {
     color: #6F7782;
     font-family: "Nunito Sans";
     font-size: 16px;
@@ -192,57 +206,58 @@ p{
     line-height: 24px;
 }
 
-@media (max-width:767px){
-    .col-6{
+@media (max-width:767px) {
+    .col-6 {
         width: 100%;
     }
 
-    .s-row{
+    .s-row {
         flex-direction: column;
         text-align: center;
     }
 
-    .h1{
+    .h1 {
         text-align: center;
     }
 
-    .p{
+    .p {
         text-align: center;
     }
 
-    .s-bar{
+    .s-bar {
         padding-bottom: 20px;
     }
 
-    .right-side img{
+    .right-side img {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .last-bar{
+    .last-bar {
         justify-content: center;
     }
 
-    .s-buttons, nav{
+    .s-buttons,
+    nav {
         display: none;
     }
 
-    .h-row{
+    .h-row {
         gap: 415px;
     }
 
-    .burger{
+    .burger {
         display: flex;
         padding: 15px;
-        border-radius:50%;
+        border-radius: 50%;
         border: 1px solid var(--Navy, #926EFB);
         color: var(--Navy, #926EFB);
     }
 }
 
-@media (min-width:768px){
-    .burger{
+@media (min-width:768px) {
+    .burger {
         display: none;
     }
 }
