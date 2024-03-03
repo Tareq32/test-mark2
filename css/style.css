@@ -1,0 +1,248 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col-6{
+    width: 50%;
+}
+
+body{
+    background: url(../img/group-overly3.svg.png);
+}
+
+.h-row{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    gap: 150px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #4A326F;
+    text-align: center;
+    font-family: "Readex Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.Home{
+    color: #926EFB !important;
+}
+
+.s-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.log-in{
+    display: flex;
+    width: 99.89px;
+    height: 54.5px;
+    padding: 15.75px 30.685px 16.25px 31px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #926EFB;
+}
+
+.log-in a{
+    color: #926EFB;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-decoration: none;
+}
+
+.sign-up{
+    width: 111.88px;
+    height: 52.5px;
+    flex-shrink: 0;
+    background: #000;
+    border-radius: 5px;
+}
+
+.sign-up a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-decoration: none;
+}
+
+.s-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: #4A326F;
+    font-family: "Readex Pro";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px
+}
+
+.d-color{
+    color: #926EFB !important;
+}
+
+p{
+    color: #6F7782;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    padding-top: 30px;
+}
+
+.s-bar form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.text-bar{
+    display: flex;
+    width: 447.17px;
+    height: 64px;
+    padding: 21px 31px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    box-shadow: 15px 9px 30px 0px rgba(117, 77, 233, 0.15);
+}
+
+.free-start button{
+    width: 150px;
+    height: 52.5px;
+    background: #000;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+}
+
+.right-side img{
+    width: 100%;
+}
+
+.last-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.last-bar span{
+    color: #6F7782;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width:767px){
+    .col-6{
+        width: 100%;
+    }
+
+    .s-row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h1{
+        text-align: center;
+    }
+
+    .p{
+        text-align: center;
+    }
+
+    .s-bar{
+        padding-bottom: 20px;
+    }
+
+    .right-side img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-bar{
+        justify-content: center;
+    }
+
+    .s-buttons, nav{
+        display: none;
+    }
+
+    .h-row{
+        gap: 415px;
+    }
+
+    .burger{
+        display: flex;
+        padding: 15px;
+        border-radius:50%;
+        border: 1px solid var(--Navy, #926EFB);
+        color: var(--Navy, #926EFB);
+    }
+}
+
+@media (min-width:768px){
+    .burger{
+        display: none;
+    }
+}
